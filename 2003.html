@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <!--如果显式地用这样一个规则去掉链接的下划线，那么锚与正常文本之间在视觉上的唯一差别就是颜色（至少默认是这样的，不过也不能完全保证其颜色肯定有区别）-->
+        <a href="www.baidu.com" style="text-decoration: none;color: gray;">百度</a>
+        <!--还可以在一个规则中结合多种装饰。如果希望所有超链接既有下划线，又有上划线-->
+        <!--不过要注意的是，如果两个不同的装饰都与同一元素匹配，胜出规则的值会完全取代另一个值。因为 text-decoration 值会替换而不是累积起来。-->
+        <p style="text-decoration: underline overline yellow">123123123123122</p>
+    </body>
+</html>
